@@ -4,13 +4,16 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.container{
-    margin: 0 150px;
+body{
+    background-color: rgb(30,30,30);
+}
+.l-r-margin{
+    margin: 0 130px;
 }
 header{
     background-image: url('./Images/head-bg.jpg'),linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 100%);
-    min-height: 100vh;
-    background-position: 50% 65%;
+    min-height: 98vh;
+    background-position: 60% 65%;
     background-blend-mode: darken;
 }
 .logo{
@@ -20,23 +23,24 @@ header{
     fill: currentColor;
     display: block;
 }
-nav{
+.nav-container{
     display: flex;
     align-items: center;
-    width: 99%;
+    height: 100px;
     padding: 24px 36px;
-    gap: 10px;
+    gap: 25px;
+    width: 100%;
 }
-nav select{
-    justify-self: flex-end;
+.nav-container select{
+    margin-left: auto;
     padding: 8px 16px;
-    background-color: transparent;
+    background-color: rgba(30,30,30,.8);
     color: white;
     border-radius: 4px;
     font-weight: bold;
-    float: right;
 }
-nav button{
+.nav-container button{
+   margin-right: 0;
    font-size: 0.9rem;
    padding: 8px 16px;
    background-color: rgb(229,9,20);
@@ -44,15 +48,14 @@ nav button{
    font-weight: bold;
    border: none;
    border-radius: 4px;
-   float: right;
 }
 header h1{
     color: white;
     display: block;
     text-align: center;
     margin-top: 200px;
-    font-size: 48px;
-    font-weight: bolder;
+    font-size: 46px;
+    font-weight: 900;
 }
 header p{
     color: white;
@@ -71,16 +74,16 @@ header form h3{
     font-weight: lighter;
     font-size: 20px;
 }
-header form div{
+.getstrt-container{
     display: flex;
-    margin-top: 10px;
+    margin-top: 16px;
     justify-content: center;
     height: 60px;
     gap: 10px;
 }
-header form input[type="email"]{
-    width: 50%;
-    background-color: rgba(0,0,0,0.5);
+.getstrt-container input[type="email"]{
+    width: 25vw;
+    background-color: rgba(30,30,30,0.6);
     color: whitesmoke;
     padding: 10px;
     font-size: 1.2rem;
@@ -88,7 +91,7 @@ header form input[type="email"]{
     border-radius: 4px;
     box-shadow: none;
 }
-.primary-btn{
+.getstrt-container button{
     background-color: rgb(229,9,20);
     color: white;
     font-size: 1.5rem;
@@ -97,4 +100,120 @@ header form input[type="email"]{
     border-radius: 4px;
     padding: 0 20px;
 }
+ section{
+    margin: 10px 0;
+    padding: 0 50px;
+    height: 75vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+ }
+.inner-section{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+section h1{
+    color: white;
+    font-weight: 800;
+    font-size: 48px;
+}
+.inner-section p{
+    color: white;
+    font-size: 24px;
+}
+.faq-section{
+    padding: 50px 130px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.faq-section h1{
+    color: white;
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.faq-section p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 40px;
+}
+.faq-box{
+    margin: auto;
+    width: 75vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.faq-ques , .faq-ans{
+    padding: 24px;
+    text-align: left;
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+}
+.faq-ans{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.faq-ans p{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+}
+.hide{
+    display: none;
+}
+footer{
+    height: 55vh;
+    background-color: black;
+    margin-top: 10px;
+    color: rgba(255,255,255,0.7);
+    padding: 60px 150px;
+}
+.links-footer{
+    margin: 20px 0;
+}
+.links-footer ul{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    margin: 10px 0;
+} 
+.links-footer ul li{
+   width: 25%;
+   text-decoration: underline;
+   font-size: 1rem;
+   cursor: pointer;
+}
+footer select{
+    padding: 8px 28px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: rgba(10,10,10,.8);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid grey;
+    font-weight: bold;
+}
+
+
+
+
+
+
 
