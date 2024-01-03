@@ -175,7 +175,7 @@ section h1{
     transition-property: display;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
-    transition-delay: 0.3s;
+    transition-delay: 2s;
 }
 .faq-ans p{
     padding: 0;
@@ -185,7 +185,7 @@ section h1{
 }
 .show{
     display: block;
-    transition: all 1s ease;
+    transition: all 2s ease;
 }
 footer{
     height: 55vh;
