@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    
 }
 body{
     background-color: rgb(30,30,30);
@@ -16,6 +17,7 @@ header{
     background-position: 60% 65%;
     background-blend-mode: darken;
 }
+
 .logo{
     width: 9.25rem;
     height: 2.5rem;
@@ -54,7 +56,7 @@ header h1{
     display: block;
     text-align: center;
     margin-top: 200px;
-    font-size: 46px;
+    font-size: 2.75rem;
     font-weight: 900;
 }
 header p{
@@ -169,19 +171,21 @@ section h1{
     background-color: #4d4d4d;
 }
 .faq-ans{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    display: none;
+    transition-property: display;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.3s;
 }
 .faq-ans p{
-    display: none;
     padding: 0;
-    margin: 0;
+    margin: 12px 0;
     font-size: 24px;
     text-align: left;
 }
-.hide{
-    display: none;
+.show{
+    display: block;
+    transition: all 1s ease;
 }
 footer{
     height: 55vh;
@@ -192,7 +196,6 @@ footer{
 }
 .links-footer{
     margin: 20px 0;
-   
 }
 .links-footer ul{
     width: 100%;
@@ -201,7 +204,6 @@ footer{
     margin: 10px 0;
 } 
 .links-footer ul li{
-
    width: 25%;
    text-decoration: underline;
    font-size: 1rem;
@@ -217,7 +219,18 @@ footer select{
     border: 1px solid grey;
     font-weight: bold;
 }
-
+/* Media Queries */
+/* @media  (max-width: 1200px) {
+    .l-r-margin{
+        margin:0 20px;
+    }
+    }
+   
+@media (max-width: 750px){
+        header h1{
+         font-size: 2rem;
+        }
+     } */
 
 
 
