@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    
 }
 body{
     background-color: rgb(30,30,30);
@@ -12,8 +11,8 @@ body{
     margin: 0 130px;
 }
 header{
-    background-image: url('./Images/head-bg.jpg'),linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 100%);
-    min-height: 98vh;
+    background-image: url('./Images/new-head-bg.jpg'),linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 100%);
+    min-height: 97vh;
     background-position: 60% 65%;
     background-blend-mode: darken;
 }
@@ -32,6 +31,7 @@ header{
     padding: 24px 36px;
     gap: 25px;
     width: 100%;
+    
 }
 .nav-container select{
     margin-left: auto;
@@ -55,9 +55,11 @@ header h1{
     color: white;
     display: block;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 180px;
     font-size: 2.75rem;
     font-weight: 900;
+    padding: 0 30px;
+    /* border: 2px solid white; */
 }
 header p{
     color: white;
@@ -67,9 +69,10 @@ header p{
 }
 header form{
     height: 120px;
-    width: 60%;
+    /* width: 60%; */
     margin: auto;
     text-align: center;
+    /* border: 2px solid white; */
 }
 header form h3{
     color: white;
@@ -78,13 +81,13 @@ header form h3{
 }
 .getstrt-container{
     display: flex;
+    text-align: center;
     margin-top: 16px;
     justify-content: center;
-    height: 60px;
     gap: 10px;
+    /* border: 2px solid white; */
 }
 .getstrt-container input[type="email"]{
-    width: 25vw;
     background-color: rgba(30,30,30,0.6);
     color: whitesmoke;
     padding: 10px;
@@ -101,6 +104,7 @@ header form h3{
     border: none;
     border-radius: 4px;
     padding: 0 20px;
+    white-space: nowrap;
 }
  section{
     margin: 10px 0;
@@ -114,14 +118,14 @@ header form h3{
     justify-content: center;
  }
 .inner-section{
-    height: 100%;
+    /* height: 100%; */
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
-section h1{
+.inner-section h1{
     color: white;
     font-weight: 800;
     font-size: 48px;
@@ -130,8 +134,9 @@ section h1{
     color: white;
     font-size: 24px;
 }
+
 .faq-section{
-    padding: 50px 130px;
+    padding: 50px 100px;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -140,7 +145,7 @@ section h1{
 .faq-section h1{
     color: white;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 44px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -152,7 +157,7 @@ section h1{
 }
 .faq-box{
     margin: auto;
-    width: 75vw;
+    width: 95%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -172,39 +177,41 @@ section h1{
 }
 .faq-ans{
     display: none;
-    transition-property: display;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;
-    transition-delay: 2s;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 .faq-ans p{
-    padding: 0;
-    margin: 12px 0;
+    margin: 0;
+    padding: 12px 0;
     font-size: 24px;
     text-align: left;
 }
 .show{
     display: block;
-    transition: all 2s ease;
+    transition: height 1s ease;
+    height: auto;
+    padding: 24px;
 }
 footer{
-    height: 55vh;
     background-color: black;
     margin-top: 10px;
     color: rgba(255,255,255,0.7);
-    padding: 60px 150px;
+    padding: 50px 80px;
 }
 .links-footer{
+    display: flex;
+    flex-direction: column;
     margin: 20px 0;
 }
 .links-footer ul{
     width: 100%;
-    display: flex;
     list-style-type: none;
     margin: 10px 0;
 } 
 .links-footer ul li{
-   width: 25%;
+   width: 24%;
+   display: inline-block;
    text-decoration: underline;
    font-size: 1rem;
    cursor: pointer;
@@ -219,18 +226,6 @@ footer select{
     border: 1px solid grey;
     font-weight: bold;
 }
-/* Media Queries */
-/* @media  (max-width: 1200px) {
-    .l-r-margin{
-        margin:0 20px;
-    }
-    }
-   
-@media (max-width: 750px){
-        header h1{
-         font-size: 2rem;
-        }
-     } */
 
 
 
