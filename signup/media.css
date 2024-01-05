@@ -1,0 +1,42 @@
+@media (width < 738px ) {
+    .container{
+        background: black;
+        /* background-image: none; */
+    }
+    .logo{
+        left: 25px;
+    }
+    .login-container{
+        width: 100%;
+        padding: 20px 30px;
+        height: auto;
+        border-radius: 0;
+        border-bottom: 1px solid #737373;
+        margin: 0;
+    }
+    .inner-footer ul li{
+        width: 30%;
+    }
+    .inner-footer{
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+@media (width < 500px) {
+    .inner-footer ul li{
+        width: 45%;
+    }
+}
+
+@media (width < 442px) {
+    header{
+        height: 45px;
+
+    }
+    .logo{
+        width: 75px;
+        height: 40px;
+        left: 10px;
+        top: 10epx;  
+    }
+}
