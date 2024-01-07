@@ -165,35 +165,37 @@ header form h3{
     flex-direction: column;
     gap: 1px;
 }
-.faq-ques , .faq-ans{
+.faq-ques{
     padding: 24px;
+    width: 100%;
     text-align: left;
     background-color: #2d2d2d;
     color: white;
     border: none;
     font-size: 1.6rem;
-    transition: all 0.4s ease;
 }
-.faq-ques:hover{
+.faq-ques:after{
+    content: '\002B';
+    float: right;
+    font-size: inherit;
+}
+.active, .faq-ques:hover{
     background-color: #4d4d4d;
 }
+.active:after{
+    content: "\2212";
+}
 .faq-ans{
-    display: none;
+    max-height: 0;
     overflow: hidden;
-    padding: 0;
-    margin: 0;
+    transition: max-height 0.3s ease-out;
+    background-color: #2d2d2d;
 }
 .faq-ans p{
     margin: 0;
-    padding: 12px 0;
+    padding: 14px 24px;
     font-size: 24px;
     text-align: left;
-}
-.show{
-    display: block;
-    transition: height 1s ease;
-    height: auto;
-    padding: 24px;
 }
 footer{
     background-color: black;
